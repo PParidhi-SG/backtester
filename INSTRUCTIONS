@@ -1,6 +1,6 @@
 /// This is a simple backtester Utilising market data, specifically bar data for markets to analyse a trading strategy's effectiveness. This is to be used on 
 bars which have already been created on the chart. Enter the following data: date,open,high,low,close,volume in this format into the 'APPL.csv' spreadsheet.
-Edit your capital in file 'portfolio.py', line 2, 'Inital cash = ()' The default is set to 10000. Run the programme from the 'main.py' file. 
+Edit your capital in file 'portfolio.py', line 2, 'Initial cash = ()' The default is set to 10000. Run the programme from the 'main.py' file. 
 If done correcetly, a portfolio summary and porformance summary will be printed.///
 
 ///Sample using the following data:
