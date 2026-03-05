@@ -1,0 +1,39 @@
+/// This is a simple backtester Utilising market data, specifically bar data for markets to analyse a trading strategy's effectiveness. This is to be used on 
+bars which have already been created on the chart. Enter the following data: date,open,high,low,close,volume in this format into the 'APPL.csv' spreadsheet.
+Edit your capital in file 'portfolio.py', line 2, 'Inital cash = ()' The default is set to 10000. Run the programme from the 'main.py' file. 
+If done correcetly, a portfolio summary and porformance summary will be printed.///
+
+///Sample using the following data:
+date,open,high,low,close,volume
+2025-03-27,1.07528,1.08209,1.07324,1.08006,217000
+2025-03-28,1.08006,1.08444,1.07634,1.08217,192000
+2025-03-31,1.08175,1.08490,1.07836,1.08147,242000
+2025-04-01,1.08147,1.08297,1.07779,1.07925,213000
+
+Sample results:
+Data loaded
+Rows: 4
+         date     open     high      low    close  volume
+0  2025-03-27  1.07528  1.08209  1.07324  1.08006  217000
+1  2025-03-28  1.08006  1.08444  1.07634  1.08217  192000
+2  2025-03-31  1.08175  1.08490  1.07836  1.08147  242000
+3  2025-04-01  1.08147  1.08297  1.07779  1.07925  213000
+2025-03-27 1.07528 1.08006
+2025-03-28 1.08006 1.08217
+2025-03-31 1.08175 1.08147
+2025-04-01 1.08147 1.07925
+Data loaded
+Rows: 4
+         date     open     high      low    close  volume
+0  2025-03-27  1.07528  1.08209  1.07324  1.08006  217000
+1  2025-03-28  1.08006  1.08444  1.07634  1.08217  192000
+2  2025-03-31  1.08175  1.08490  1.07836  1.08147  242000
+3  2025-04-01  1.08147  1.08297  1.07779  1.07925  213000
+2025-03-27 1.08006 Hold cash:  10000.0 pos:  0
+2025-03-28 1.08217 Buy cash:  9989.1783 pos:  10
+2025-03-31 1.08147 Sell cash:  9999.993 pos:  0
+2025-04-01 1.07925 Sell cash:  9999.993 pos:  0
+
+Portfolio Summary: {'initial_cash': 10000.0, 'final_equity': 9999.993, 'return_pct': -6.999999999646178e-05, 'num_trades': 2, 'final_cash': 9999.993, 'final_position': 0}
+Performance Summary: {'initial_cash': 10000.0, 'final_equity': 9999.993, 'total_return_pct': -6.999999999646178e-05, 'max_drawdown_pct': -6.999999999646178e-05, 'volatility_pct': 0.0005556077752954803, 'sharpe': -7.937253933193771, 'num_bars': 4, 'num_trades': 2, 'num_round_trips': 1, 'win_rate_pct': 0.0, 'avg_win': 0.0, 'avg_loss': -0.0070000000000014495, 'profit_factor': 0.0, 'total_trade_pnl': -0.0070000000000014495
+///
